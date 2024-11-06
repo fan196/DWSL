@@ -1,0 +1,71 @@
+python -u run_longExp.py \
+      --root_path './dataset/ETT-small/' \
+      --data_path 'ETTm2.csv' \
+      --data ETTm2 \
+      --features M \
+      --seq_len 720 \
+      --pred_len 96 \
+      --enc_in 7 \
+      --e_layers 2 \
+      --d_model 128 \
+      --dropout 0.1 \
+      --patch_len 48 \
+      --stride 48 \
+      --train_epochs 100 \
+      --itr 1 \
+      --batch_size 1024 \
+      --learning_rate 0.005
+
+python -u run_longExp.py \
+      --root_path './dataset/ETT-small/' \
+      --data_path 'ETTm2.csv' \
+      --data ETTm2 \
+      --features M \
+      --seq_len 720 \
+      --pred_len 192 \
+      --enc_in 7 \
+      --e_layers 1 \
+      --d_model 32 \
+      --dropout 0.1 \
+      --patch_len 48 \
+      --stride 48 \
+      --train_epochs 100 \
+      --itr 1 \
+      --batch_size 1024 \
+      --learning_rate 0.005
+
+python -u run_longExp.py \
+      --root_path './dataset/ETT-small/' \
+      --data_path 'ETTm2.csv' \
+      --data ETTm2 \
+      --features M \
+      --seq_len 720 \
+      --pred_len 336 \
+      --enc_in 7 \
+      --e_layers 1 \
+      --d_model 32 \
+      --dropout 0.1 \
+      --patch_len 48 \
+      --stride 48 \
+      --train_epochs 100 \
+      --itr 1 \
+      --batch_size 1024 \
+      --learning_rate 0.005
+
+python -u run_longExp.py \
+      --root_path './dataset/ETT-small/' \
+      --data_path 'ETTm2.csv' \
+      --data ETTm2 \
+      --features M \
+      --seq_len 720 \
+      --pred_len 720 \
+      --enc_in 7 \
+      --e_layers 1 \
+      --d_model 32 \
+      --dropout 0.1 \
+      --patch_len 48 \
+      --stride 48 \
+      --train_epochs 100 \
+      --itr 1 \
+      --batch_size 1024 \
+      --learning_rate 0.005
